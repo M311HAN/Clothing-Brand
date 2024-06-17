@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Clothing-Brand/static/css/main.2b5997c4.css",
+    "main.js": "/Clothing-Brand/static/js/main.88134cd0.js",
+    "static/js/453.4ed88d88.chunk.js": "/Clothing-Brand/static/js/453.4ed88d88.chunk.js",
+    "static/media/logo.png": "/Clothing-Brand/static/media/logo.38e90e3aa829f8d950d6.png",
+    "static/media/instagram.png": "/Clothing-Brand/static/media/instagram.6fc38c47b400c0c4258e.png",
+    "static/media/twitter.png": "/Clothing-Brand/static/media/twitter.83506ed1484b9d3d2ea2.png",
+    "index.html": "/Clothing-Brand/index.html",
+    "main.2b5997c4.css.map": "/Clothing-Brand/static/css/main.2b5997c4.css.map",
+    "main.88134cd0.js.map": "/Clothing-Brand/static/js/main.88134cd0.js.map",
+    "453.4ed88d88.chunk.js.map": "/Clothing-Brand/static/js/453.4ed88d88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b5997c4.css",
+    "static/js/main.88134cd0.js"
+  ]
+}

@@ -5,24 +5,21 @@ import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import Product from './components/Product';
 import Footer from './components/Footer';
-import LegalPage from './components/LegalPage'; 
+import LegalPage from './components/LegalPage';
 import InterestCalculatorPage from './components/InterestCalculatorPage';
 import './App.css';
 
 // Main App component with router and state management for user session.
 function App() {
-  // State hooks to manage user authentication and user information.
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  // Handles user login, sets logged in state to true.
   const handleSignIn = (event) => {
     event.preventDefault();
     setIsLoggedIn(true);
   };
 
-  // Handles user logout, resets state and alerts the user.
   const handleLogout = () => {
     setIsLoggedIn(false);
     setEmail('');
@@ -30,7 +27,6 @@ function App() {
     alert('User has logged out');
   };
 
-  // Sample product data to be used in the ProductList component.
   const products = [
     { name: 'T-Shirt', description: 'A cool cotton t-shirt.', price: 19.99 },
     { name: 'Jeans', description: 'Stylish denim jeans.', price: 49.99 },
@@ -108,5 +104,6 @@ function ProductList({ products }) {
 }
 
 export default App;
+
 
 

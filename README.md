@@ -1,4 +1,5 @@
 # Sousa - Out-of-this-world Clothing Brand
+You can view the live site [here](https://m311han.github.io/Clothing-Brand/). 
 
 ![Sousa homepage](src/assets/Sousa-home.png)
 

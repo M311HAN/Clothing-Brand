@@ -16,7 +16,7 @@ function Header({ isLoggedIn, handleLogout }) {
           <button onClick={handleLogout} className="logout-button">Log Out</button>
         </>
       ) : (
-        <p className="header-tagline">Please sign in to experience the full cosmic collection!</p>
+        <p className="header-tagline">Hi there! Please sign in to experience the full cosmic collection!</p>
       )}
       <NavigationMenu /> 
     </header>

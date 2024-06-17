@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';  // Import Navigate
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 import Product from './components/Product';
@@ -11,18 +11,17 @@ import './App.css';
 
 // Main App component with router and state management for user session.
 function App() {
-  // State hooks to manage user authentication and user information.
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  
   // Handles user login, sets logged in state to true.
   const handleSignIn = (event) => {
     event.preventDefault();
     setIsLoggedIn(true);
   };
 
-  // Handles user logout, resets state and alerts the user.
+    // Handles user logout, resets state and alerts the user.
   const handleLogout = () => {
     setIsLoggedIn(false);
     setEmail('');
@@ -30,7 +29,6 @@ function App() {
     alert('User has logged out');
   };
 
-  // Sample product data to be used in the ProductList component.
   const products = [
     { name: 'T-Shirt', description: 'A cool cotton t-shirt.', price: 19.99 },
     { name: 'Jeans', description: 'Stylish denim jeans.', price: 49.99 },
@@ -47,6 +45,7 @@ function App() {
         <Route path="/shop" element={<ProductList products={products} />} />
         <Route path="/legal" element={<LegalPage />} />
         <Route path="/interest-calculator" element={<InterestCalculatorPage />} />
+        <Route path="*" element={<Navigate to="/" />} /> {/* Default route */}
       </Routes>
       <Footer />
     </div>

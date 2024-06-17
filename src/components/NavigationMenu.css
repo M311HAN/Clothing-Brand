@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+/* src/components/NavigationMenu.css */
+.navigation-menu {
+  margin-top: 30px;
+}
+
+.navigation-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+  gap: 10px; /* Add gap between wrapped items */
+}
+
+.navigation-menu li {
+  margin: 0 15px;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: #7d5a91;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevent wrapping */
+  font-size: 1.1em;
+  display: inline-block;
+  height: 1.4em; /* Fixed height to prevent layout shift */
+  line-height: 1.4em; /* Center text vertically */
+  min-width: 80px; /* Minimum width to reserve space */
+}
+
+.navigation-menu a:hover {
+  color: #5a3e66;
+}
+
+.navigation-menu a.active-link {
+  color: #5a3e66;
+  font-size: 1.4em;
+  transform: translateY(-5px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navigation-menu {
+    margin-top: 20px;
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+
+  .navigation-menu li {
+    margin: 0 10px;
+  }
+
+  .navigation-menu a {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    height: 1.1em; /* Adjust fixed height for smaller screens */
+    line-height: 1.1em;
+    min-width: 70px; /* Minimum width for smaller screens */
+  }
+
+  .navigation-menu ul {
+    gap: 5px; /* Add gap between wrapped items */
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation-menu {
+    margin-top: 20px;
+    padding: 0 10px; /* Adjust padding for very small screens */
+  }
+
+  .navigation-menu li {
+    margin: 0 5px;
+  }
+
+  .navigation-menu a {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    height: 1.1em; /* Adjust fixed height for very small screens */
+    line-height: 1.1em;
+    min-width: 60px; /* Minimum width for very small screens */
+  }
+
+  .navigation-menu a.active-link {
+    font-size: 1.1em;
+    transform: translateY(-2px); /* Further reduce translation on very small screens */
+  }
+
+  .navigation-menu ul {
+    gap: 8px; /* Add smaller gap between wrapped items */
+  }
+}
+
+
+  
+  
+  

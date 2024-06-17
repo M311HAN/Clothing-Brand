@@ -1,0 +1,59 @@
+/* src/components/Product.css */
+.product {
+  border: 1px solid #ddd;
+  padding: 10px; /* Add padding inside the product box */
+  margin: 5px; /* Adjust margin to make boxes closer */
+  border-radius: 5px; /* Round the corners of the product box */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for normal state */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  width: 220px; /* Adjust width for uniform size */
+  height: 180px; /* Adjust height for uniform size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.product-list {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align the items */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  margin: 30px 0; /* Add margin above and below the product list */
+  gap: 35px; /* Adjust gap between items */
+  padding: 0 20px; /* Add padding on the sides to align with header/footer padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-list {
+    gap: 20px;
+  }
+
+  .product {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list {
+    gap: 10px;
+  }
+
+  .product {
+    width: 140px;
+  }
+}
+
+
+
+  
+  
+  
+  

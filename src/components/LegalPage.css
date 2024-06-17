@@ -1,0 +1,43 @@
+/* Legal page styles */
+.legal-page {
+    padding: 20px;
+    text-align: left; 
+    max-width: 800px; 
+    margin: 0 auto; 
+  }
+  
+  .legal-page h2, .legal-page h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #333;
+  }
+  
+  .legal-page p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .legal-page a {
+    color: #7d5a91;
+    text-decoration: none;
+  }
+  
+  .legal-page a:hover {
+    color: #5a3e66;
+    text-decoration: underline;
+  }
+  
+  /* Responsive design for legal page */
+  @media (max-width: 768px) {
+    .legal-page h2, .legal-page h3 {
+      font-size: 1.5em;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .legal-page h2, .legal-page h3 {
+      font-size: 1.5em;
+    }
+  }
